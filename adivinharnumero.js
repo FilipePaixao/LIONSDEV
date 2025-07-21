@@ -9,7 +9,7 @@ const valormaximodonumero = 100 + 1
 
 let numeroaleatrio = Math.floor(Math.random() * valormaximodonumero + 100); // 100 -> 200
 
-console.log(numeroaleatrio);
+//console.log(numeroaleatrio);
 
 const rl = readline.createInterface({
   input: process.stdin,
