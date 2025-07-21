@@ -7,7 +7,7 @@ let maxtry = 7;
 const valormaximodonumero = 200 + 1
 //-----------------------
 
-let numeroaleatrio = Math.floor(Math.random() + 100 * valormaximodonumero); // 1 -> 10
+let numeroaleatrio = (Math.floor(Math.random() + 100) * valormaximodonumero); // 1 -> 10
 
 console.log(numeroaleatrio);
 
