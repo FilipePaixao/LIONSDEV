@@ -16,7 +16,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 rl.prompt();
-
+// efef
 console.log(`\n---------- JOGO DA ADIVINHAÇÃO ----------
 Tente acertar o numero que foi gerado de 1 a 10
 Digite "sair" para sair do jogo
