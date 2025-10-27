@@ -1,7 +1,7 @@
-const bcrypt = require('bcrypt');
-const mongoose = require('mongoose');
-const RegisterUserMGS = require("../Schemas/SchemaRegister");
-const { RetornarSucesso, RetornarErro } = require("../Utils/utils");
+import bcrypt from 'bcrypt';
+import mongoose from 'mongoose';
+import RegisterUserMGS from "../../Schemas/SchemaRegister.js";
+import { RetornarSucesso, RetornarErro } from "../../Utils/utils.js";
 
 async function RemoveUser(req, res) {
     try {
@@ -32,4 +32,4 @@ async function RemoveUser(req, res) {
     }
 }
 
-module.exports = { RemoveUser };
+export { RemoveUser };

@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
+
 const SchemaRegister = new mongoose.Schema({
     Nome: {
         type: String,
@@ -6,15 +7,15 @@ const SchemaRegister = new mongoose.Schema({
     },
     Email:{
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     Senha: {
         type: String,
         required: true
     },
+});
 
-})
+const RegisterUserMGS = mongoose.model("Register", SchemaRegister);
 
-const RegisterUserMGS = mongoose.model("Register", SchemaRegister)
-
-module.exports = RegisterUserMGS
+export default RegisterUserMGS;

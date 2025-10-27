@@ -1,8 +1,9 @@
-require("dotenv").config(); // Carrega as variáveis de ambiente do arquivo .env
+import dotenv from "dotenv";
+dotenv.config(); // Carrega as variáveis de ambiente do arquivo .env
 
-const express = require("express");
-const mongoose = require("mongoose");
-const rotas = require("./Src/Routes/routes.js");
+import express from "express";
+import mongoose from "mongoose";
+import rotas from "./Src/Routes/routes.js";
 
 const app = express();
 const port = process.env.PORT;
